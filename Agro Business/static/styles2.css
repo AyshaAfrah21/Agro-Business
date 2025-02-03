@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('background.png'); /* Replace 'background-image.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+.login-container {
+    width: 300px;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0b83ae; /* Dark gray text */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; /* Medium gray text */
+    text-align: center;
+}
+
+.form-group input {
+    display: block;
+    width: 280px; 
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 14px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0b83ae; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e3bf0b; /* Darker green on hover */
+}
+
+button.signup-button {
+    background-color: white; /* White background */
+    color: #0b83ae; /* Blue text */
+    border: 2px solid #0b83ae; /* Blue border */
+    border-radius: 20px; /* Different border radius */
+}
+
+button.signup-button:hover {
+    background-color: #e3bf0b; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
+.login-form p {
+    text-align: center;
+    margin: 15px 0 10px 0;
+}

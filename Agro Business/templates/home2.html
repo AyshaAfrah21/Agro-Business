@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Products</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles3.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/home2">AgroBusiness</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home2">Home</a></li>
+                <li><a href="/register">Farmer Register</a></li>
+                <li><a href="/farming">Add Farming</a></li>
+                <li><a href="/details">Farmer Details</a></li>
+                <li><a href="/products">Agro Products</a></li>
+            
+                <li><a href="/" class="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+        {% if current_user.is_authenticated  %}
+        <div class="welcome-message">
+            <p>Welcome, <span id="username">{{current_user.username}}</span>!</p>
+        </div>
+        {% endif %}
+    </header>
+    <main>
+        <div class="center-text">
+            <h1>Sell Agro Products and Buy</h1>
+            <p>DBMS Mini Project</p>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer-top"></div>
+        <div class="container">
+            <div class="credits">
+                <br>
+                Developed by <a href="/">Aysha Afrah</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
